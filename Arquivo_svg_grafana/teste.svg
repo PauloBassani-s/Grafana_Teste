@@ -1,18 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="491" height="341" viewBox="0 0 491 341">
-  <rect x="100" y="200" width="120" height="60" rx="9" ry="9" fill="#60a917" stroke="#2D7600" fill-opacity="0.7" stroke-opacity="0.7"/>
-  <text x="160" y="235" fill="#ffffff" font-family="Helvetica" font-size="12" text-anchor="middle">PC1</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <!-- PC1 -->
+  <rect x="100" y="50" width="120" height="60" rx="10" ry="10" fill="#60a917" stroke="#2D7600" stroke-width="2" opacity="0.7"/>
+  <text x="160" y="85" font-family="Helvetica" font-size="12" fill="white" text-anchor="middle">PC1</text>
 
-  <rect x="100" y="350" width="120" height="60" rx="9" ry="9" fill="#60a917" stroke="#2D7600" fill-opacity="0.7" stroke-opacity="0.7"/>
-  <text x="160" y="385" fill="#ffffff" font-family="Helvetica" font-size="12" text-anchor="middle">PC2</text>
+  <!-- PC2 -->
+  <rect x="100" y="150" width="120" height="60" rx="10" ry="10" fill="#60a917" stroke="#2D7600" stroke-width="2" opacity="0.7"/>
+  <text x="160" y="185" font-family="Helvetica" font-size="12" fill="white" text-anchor="middle">PC2</text>
 
-  <rect x="100" y="480" width="120" height="60" rx="9" ry="9" fill="#60a917" stroke="#2D7600" fill-opacity="0.7" stroke-opacity="0.7"/>
-  <text x="160" y="515" fill="#ffffff" font-family="Helvetica" font-size="12" text-anchor="middle">PC3</text>
+  <!-- PC3 -->
+  <rect x="100" y="250" width="120" height="60" rx="10" ry="10" fill="#60a917" stroke="#2D7600" stroke-width="2" opacity="0.7"/>
+  <text x="160" y="285" font-family="Helvetica" font-size="12" fill="white" text-anchor="middle">PC3</text>
 
-  <rect x="470" y="350" width="120" height="60" fill="#1ba1e2" stroke="#006EAF" fill-opacity="0.7" stroke-opacity="0.7"/>
-  <text x="530" y="385" fill="#ffffff" font-family="Helvetica" font-size="12" text-anchor="middle">Switch1</text>
+  <!-- Switch -->
+  <rect x="400" y="150" width="120" height="60" fill="#1ba1e2" stroke="#006EAF" stroke-width="2" opacity="0.7"/>
+  <text x="460" y="185" font-family="Helvetica" font-size="12" fill="white" text-anchor="middle">Switch1</text>
 
-  <line x1="220" y1="230" x2="470" y2="380" stroke="#000" />
-  <line x1="220" y1="380" x2="470" y2="380" stroke="#000" />
-  <line x1="220" y1="510" x2="470" y2="380" stroke="#000" />
+  <!-- Linhas -->
+  <line x1="220" y1="80" x2="400" y2="180" stroke="#000" />
+  <line x1="220" y1="180" x2="400" y2="180" stroke="#000" />
+  <line x1="220" y1="280" x2="400" y2="180" stroke="#000" />
 </svg>
-
