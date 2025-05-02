@@ -14,6 +14,6 @@ cells:
         - { color: "green", level: 1 }
     target:
       datasourceUid: "Zabbix - Varejo"  # Substitua se for outro UID
-      queryType: "item"
+      queryType: "Metrics"
       host: "TTPR021393PS1A2"
       item: "Ping - Disponibilidade"
