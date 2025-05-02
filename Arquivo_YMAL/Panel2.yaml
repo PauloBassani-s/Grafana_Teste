@@ -1,18 +1,19 @@
 # Panel Config
 
 cellIdPreamble: "cell-"
-cells: 
-  drawio:
-    link:
-      url: "https://app.diagrams.net/?p=svgdata"
+
+cells:
   TTPR021393PS1A2:
-    dataRef: "Ping - Disponibilidade"
     label:
-      separator: "cr"
       units: "none"
       decimalPoints: 0
     labelColor:
       gradientMode: "hue"
       thresholds:
-        - {color: "green", level: 5}
-        - {color: "red", level: 0}
+        - { color: "red", level: 0 }
+        - { color: "green", level: 5 }
+    target:
+      datasourceUid: "Zabbix - Varejo"  # Substitua se for outro UID
+      queryType: "item"
+      host: "TTPR021393PS1A2"
+      item: "Ping - Disponibilidade"
