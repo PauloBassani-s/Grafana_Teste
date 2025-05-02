@@ -11,7 +11,7 @@ cells:
       gradientMode: "hue"
       thresholds:
         - { color: "red", level: 0 }
-        - { color: "green", level: 5 }
+        - { color: "green", level: 1 }
     target:
       datasourceUid: "Zabbix - Varejo"  # Substitua se for outro UID
       queryType: "item"
