@@ -1,0 +1,18 @@
+# Panel Config
+
+cellIdPreamble: "cell-"
+cells: 
+  drawio:
+    link:
+      url: "https://app.diagrams.net/?p=svgdata"
+  TTPR021393PS1A2:
+    dataRef: "Ping - Disponibilidade"
+    label:
+      separator: "cr"
+      units: "none"
+      decimalPoints: 0
+    labelColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 5}
+        - {color: "red", level: 0}

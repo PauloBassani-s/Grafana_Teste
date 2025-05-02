@@ -4,4 +4,3 @@ elements:
     thresholds: [0.5]
     colors: ['red', 'green']
     text: "${__value.raw} == 0 ? 'Desligada' : 'IP: 192.168.0.21'"
-    
