@@ -1,6 +1,10 @@
-elements:
-  - id: TTPR021393PS1A2
-    metric: Ping - Disponibilidade
-    thresholds: [0.5]
-    colors: ['red', 'green']
-    text: "${__value.raw} == 0 ? 'Desligada' : 'IP: 192.168.0.21'"
+
+
+    elements:
+  - id: "TTPR021393PS1A2"
+    dataRef: "ping_TTPR021393PS1A2"
+    thresholds:
+      - value: 0
+        color: "red"
+      - value: 1
+        color: "green"
