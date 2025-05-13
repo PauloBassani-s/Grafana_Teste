@@ -1,14 +1,13 @@
 ---
 
-cellIdPreamble: "cell-"
-
-cells:
-  TTPR021393PS1A2:
-    label:
-      units: "none"
-      decimalPoints: 0
-    labelColor:
-      gradientMode: "hue"
-      thresholds:
-        - { color: "red", level: 0 }
-        - { color: "green", level: 1 }
+rules:
+  - dataRef: TTPR021393PS1A2
+    operator: "="
+    value: 1
+    style:
+      fill: "green"
+  - dataRef: TTPR021393PS1A2
+    operator: "="
+    value: 0
+    style:
+      fill: "red"

@@ -14,8 +14,3 @@ cells:
       thresholds:
         - { color: "red", level: 0 }
         - { color: "green", level: 1 }
-    target:
-      datasourceUid: "teste"  # Substitua se for outro UID
-      queryType: "Metrics"
-      host: "TTPR021393PS1A2"
-      item: "Ping - Disponibilidade"
