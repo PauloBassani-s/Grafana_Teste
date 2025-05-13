@@ -1,10 +1,13 @@
+---
 
+cellIdPreamble: "cell-"
 
+cells:
     elements:
-  - id: "TTPR021393PS1A2"
-    dataRef: "ping_TTPR021393PS1A2"
-    thresholds:
-      - value: 0
-        color: "red"
-      - value: 1
-        color: "green"
+      - id: "TTPR021393PS1A2"
+        dataRef: "ping_TTPR021393PS1A2"
+        thresholds:
+          - value: 0
+            color: "red"
+          - value: 1
+            color: "green"
