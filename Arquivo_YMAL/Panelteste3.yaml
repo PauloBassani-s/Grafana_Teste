@@ -1,7 +1,8 @@
 --- 
 
+
 cells:
-  - id: "service_a_box"
+  - id: "cell-service_a_box"
     type: "shape"
     dataRef: "status_maquina_a" # Novo alias para o status da máquina A
     thresholds:
@@ -10,12 +11,12 @@ cells:
       - value: 1
         color: "#00FF00" # Verde para Ligado (valor 1)
 
-  - id: "service_b_box"
+  - id: "cell-service_b_box"
     type: "shape"
     # Mantemos sem regras de cor por enquanto para simplificar.
     # Você pode adicionar similarmente se precisar de status para o Serviço B.
 
-  - id: "arrow_a_to_b"
+  - id: "cell-arrow_a_to_b"
     type: "line"
     dataRef: "latencia_servicos" # Alias da nossa query de latência
     thresholds:
@@ -26,7 +27,7 @@ cells:
       - value: 100
         color: "#FF0000" # Vermelho para latência alta (100ms ou mais)
 
-  - id: "latency_text"
+  - id: "cell-latency_text"
     type: "text"
     dataRef: "latencia_servicos" # O mesmo alias da query de latência
     unit: "ms"
