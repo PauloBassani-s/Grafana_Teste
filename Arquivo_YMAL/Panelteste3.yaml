@@ -6,8 +6,10 @@ cells:
     type: "shape"
     dataRef: "status_maquina_a" # Novo alias para o status da máquina A
     thresholds:
-      - { color: "red", level: 0 }
-      - { color: "green", level: 1 }
+      - value: 0
+        color: "#FF0000" # Vermelho para Desligado (valor 0)
+      - value: 1
+        color: "#00FF00" # Verde para Ligado (valor 1)
 
 
   - id: "cell-service_b_box"
