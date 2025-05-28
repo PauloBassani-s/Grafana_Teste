@@ -1,0 +1,21 @@
+---
+
+anchorLinks:
+  - link: &grafana-home
+      url: "https://grafana.gb.tech/d/ee1n9txa4q6m8e1/qa-e-hml-7c-esteiras-1?orgId=1&from=now-6h&to=now&timezone=browser"
+      params: "time"
+
+cellIdPreamble: "cell-"
+cells: 
+  maquina_A:
+    dataRef: "status_maquina_a"
+    label:
+      #separator: "cr"
+      #units: "none"
+      #decimalPoints: 0
+    fillColor:
+      thresholds:
+        - {color: "green", level: 1}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 0}	
+    link: *grafana-home
