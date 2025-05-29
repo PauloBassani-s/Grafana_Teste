@@ -15,7 +15,6 @@ cells:
       #decimalPoints: 0
     fillColor:
       thresholds:
+        - {color: "red", level: 0}
         - {color: "green", level: 1}
-        - {color: "orange", level: 2}
-        - {color: "red", level: 0}	
     link: *grafana-home
