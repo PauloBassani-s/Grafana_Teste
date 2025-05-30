@@ -1,0 +1,22 @@
+---
+
+anchorLinks:
+  - link: &Fila_PDV_GB
+      url: "https://grafana.gb.tech/d/dea9rtoh6h8n4d/qa-e-hml-7c-esteiras-4?orgId=1&from=now-7d&to=now&timezone=America%2FSao_Paulo"
+      params: "time"
+
+cellIdPreamble: "cell-"
+cells: 
+  user_1:
+    #dataRef: "status_maquina_a"
+    dataRef: "TTPR6749PSE6_teste"
+    label:
+      #text: "{{ value }}"   
+      color: "white"        
+      fontSize: 12          
+    #fillColor:
+      #thresholds:
+        #- {color: "red", level: 0}
+        #- {color: "green", level: 1}
+    #link: *Fila_PDV_GB
+    

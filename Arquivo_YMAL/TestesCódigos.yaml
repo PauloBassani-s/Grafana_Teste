@@ -12,12 +12,6 @@ anchorLinks:
   - &dash_detalhado
     url: "https://grafana.gb.tech/d/lmn789/detalhado-maquina?orgId=1"
 
-#Exemplo link sendo usado em uma celula já reutilizada
-maquina_C:
-    <<: *template_cell
-    dataRef: "status_maquina_c"
-    anchorLinks:
-      - *dash_temperatura
 
 #Aplicar mesma regra para várias máquinas
 cellIdPreamble: "cell-"
@@ -38,12 +32,21 @@ cells:
     dataRef: "status_maquina_c"
 
 
+#Exemplo link sendo usado em uma celula já reutilizada
+maquina_C:
+    <<: *template_cell
+    dataRef: "status_maquina_c"
+    anchorLinks:
+      - *dash_temperatura
+
+
 #Como colocar mas de 1 circurstância em uma mesma regra
 label:
       dataRef: "usuario_maquina_a"
       text: "{{ value }}"   # Mostra o texto da métrica no SVG
       color: "white"        # Personalização do texto
       fontSize: 12          # Tamanho da fonte (opcional)
+
 #EX:
 maquina_A: &template_cell
     dataRef: "status_maquina_a"

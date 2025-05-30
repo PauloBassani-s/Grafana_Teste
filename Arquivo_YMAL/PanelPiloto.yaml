@@ -1,20 +1,26 @@
 ---
 
+# links
 anchorLinks:
-  - link: &grafana-home
-      url: "https://grafana.gb.tech/d/ee1n9txa4q6m8e1/qa-e-hml-7c-esteiras-1?orgId=1&from=now-6h&to=now&timezone=browser"
+  - link: &Fila_PDV_GB
+      url: "https://grafana.gb.tech/d/dea9rtoh6h8n4d/qa-e-hml-7c-esteiras-4?orgId=1&from=now-7d&to=now&timezone=America%2FSao_Paulo"
       params: "time"
 
+
+
+# Status máquinas
 cellIdPreamble: "cell-"
 cells: 
   maquina_A:
-    dataRef: "status_maquina_a"
-    label:
-      #separator: "cr"
-      #units: "none"
-      #decimalPoints: 0
+    dataRef: "status_maquina_a"         
     fillColor:
       thresholds:
         - {color: "red", level: 0}
         - {color: "green", level: 1}
-    link: *grafana-home
+    link: *Fila_PDV_GB
+
+# Usuário logado
+
+      #separator: "cr"
+      #units: "none"
+      #decimalPoints: 0
