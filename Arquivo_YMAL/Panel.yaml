@@ -7,9 +7,7 @@ anchorLinks:
     url: "https://grafana.gb.tech/d/dea9rtoh6h8n4d/qa-e-hml-7c-esteiras-4-e-5?orgId=1&from=now-7d&to=now&timezone=America%2FSao_Paulo"
 
 #Template ping (on or off) máquinas
-cellIdPreamble: "cell-"
-cells: 
-  template_on_off: &template_status_maquinas
+template_on_off: &template_status_maquinas
    dataRef: "Alias Grafana"
    label:
    fillColor:
@@ -18,22 +16,22 @@ cells:
        - {color: "green", level: 1}
 
 #Template text (user logados ou não) texto
-  template_user_logado: &template_user_logado
+template_user_logado: &template_user_logado
       dataRef: "Alias grafana"
       label:
-        separator: "replace"
+        separator: "replace" 
 
-#Execução de regras máquinas 
-maquina_A:
-    <<: *template_cell
-    dataRef: "status_maquina_c"
-    anchorLinks:
-      - *dash_temperatura
-
-
-
-
-
+#Execução de regras máquinas
+cellIdPreamble: "cell-"
+cells:  
+  reservado1:
+      <<: *template_status_maquinas
+      dataRef: "TTPR6760PSE4"
+      anchorLinks:
+        - *Esteira_Reservados
+  txtmaq1:
+      <<: *template_user_logado
+      dataRef: "TTPR6760PSE4_txt"
 
 
 
