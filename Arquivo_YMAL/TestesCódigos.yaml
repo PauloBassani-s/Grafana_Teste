@@ -3,15 +3,6 @@ anchorLinks:
   - &dash_esteiras
     url: "https://grafana.gb.tech/d/ee1n9txa4q6m8e1/qa-e-hml-7c-esteiras-1?orgId=1&from=now-6h&to=now&timezone=browser"
 
-  - &dash_temperatura
-    url: "https://grafana.gb.tech/d/abc123/temp-maquinas?orgId=1"
-
-  - &dash_manutencao
-    url: "https://grafana.gb.tech/d/xyz456/manutencao-paradas?orgId=1"
-
-  - &dash_detalhado
-    url: "https://grafana.gb.tech/d/lmn789/detalhado-maquina?orgId=1"
-
 
 #Aplicar mesma regra para várias máquinas
 cellIdPreamble: "cell-"
