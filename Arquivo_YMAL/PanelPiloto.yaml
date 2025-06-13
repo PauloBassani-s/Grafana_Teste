@@ -92,121 +92,121 @@ cells:
     link: *Esteira_Reservados
 
   txtmaq9:
-        dataRef: "TTPR6768PSE4_txt"
-        label:
-          separator: "replace"
-  reservado9:
-    dataRef: "TTPR6768PSE4"
-    fillColor:
-      thresholds: *thresholds-on-off
-    link: *Esteira_Reservados
-
-  txtmaq10:
-        dataRef: "TTPR6769PSE4_txt"
-        label:
-          separator: "replace"
-  reservado10:
-    dataRef: "TTPR6769PSE4"
-    fillColor:
-      thresholds: *thresholds-on-off
-    link: *Esteira_Reservados
-
-  txtmaq11:
-        dataRef: "TTPR6770PSE4_txt"
-        label:
-          separator: "replace"
-  reservado11:
-    dataRef: "TTPR6770PSE4"
-    fillColor:
-      thresholds: *thresholds-on-off
-    link: *Esteira_Reservados 
-  
-  txtmaq12:
-        dataRef: "TTPR6771PSE4_txt"
-        label:
-          separator: "replace"
-  reservado12:
-    dataRef: "TTPR6771PSE4"
-    fillColor:
-      thresholds: *thresholds-on-off
-    link: *Esteira_Reservados
-  
-  txtmaq13:
-        dataRef: "TTPR6772PSE4_txt"
-        label:
-          separator: "replace" 
-  reservado13:
-    dataRef: "TTPR6772PSE4"
-    fillColor:
-      thresholds: *thresholds-on-off
-    link: *Esteira_Reservados
-  
-  txtmaq14:
-        dataRef: "TTPR6773PSE4_txt"
-        label:
-          separator: "replace"
-  reservado14:
-    dataRef: "TTPR6773PSE4"
-    fillColor:
-      thresholds: *thresholds-on-off
-    link: *Esteira_Reservados
-
-  txtmaq15:
-        dataRef: "TTPR6774PSE4_txt"
-        label:
-          separator: "replace"
-  reservado15:
-    dataRef: "TTPR6774PSE4"
-    fillColor:
-      thresholds: *thresholds-on-off
-    link: *Esteira_Reservados
-
-  txtmaq16:
-        dataRef: "TTPR6775PSE4_txt"
-        label:
-          separator: "replace"
-  reservado16:
-    dataRef: "TTPR6775PSE4"
-    fillColor:
-      thresholds: *thresholds-on-off
-    link: *Esteira_Reservados
-
-  txtmaq17:
-        dataRef: "TTPR6776PSE4_txt"
-        label:
-          separator: "replace"
-  reservado17:
-    dataRef: "TTPR6776PSE4"
-    fillColor:
-      thresholds: *thresholds-on-off
-    link: *Esteira_Reservados
-
-  txtmaq18:
         dataRef: "TTPR6777PSE4_txt"
         label:
           separator: "replace"
-  reservado18:
+  reservado9:
     dataRef: "TTPR6777PSE4"
     fillColor:
       thresholds: *thresholds-on-off
     link: *Esteira_Reservados
 
-  txtmaq19:
+  txtmaq10:
         dataRef: "TTPR6778PSE4_txt"
+        label:
+          separator: "replace"
+  reservado10:
+    dataRef: "TTPR6778PSE4"
+    fillColor:
+      thresholds: *thresholds-on-off
+    link: *Esteira_Reservados
+
+  txtmaq11:
+        dataRef: "TTPR6768PSE4_txt"
+        label:
+          separator: "replace"
+  reservado11:
+    dataRef: "TTPR6768PSE4"
+    fillColor:
+      thresholds: *thresholds-on-off
+    link: *Esteira_Reservados 
+  
+  txtmaq12:
+        dataRef: "TTPR6769PSE4_txt"
+        label:
+          separator: "replace"
+  reservado12:
+    dataRef: "TTPR6769PSE4"
+    fillColor:
+      thresholds: *thresholds-on-off
+    link: *Esteira_Reservados
+  
+  txtmaq13:
+        dataRef: "TTPR6770PSE4_txt"
+        label:
+          separator: "replace" 
+  reservado13:
+    dataRef: "TTPR6770PSE4"
+    fillColor:
+      thresholds: *thresholds-on-off
+    link: *Esteira_Reservados
+  
+  txtmaq14:
+        dataRef: "TTPR6771PSE4_txt"
+        label:
+          separator: "replace"
+  reservado14:
+    dataRef: "TTPR6771PSE4"
+    fillColor:
+      thresholds: *thresholds-on-off
+    link: *Esteira_Reservados
+
+  txtmaq15:
+        dataRef: "TTPR6772PSE4_txt"
+        label:
+          separator: "replace"
+  reservado15:
+    dataRef: "TTPR6772PSE4"
+    fillColor:
+      thresholds: *thresholds-on-off
+    link: *Esteira_Reservados
+
+  txtmaq16:
+        dataRef: "TTPR6773PSE4_txt"
+        label:
+          separator: "replace"
+  reservado16:
+    dataRef: "TTPR6773PSE4"
+    fillColor:
+      thresholds: *thresholds-on-off
+    link: *Esteira_Reservados
+
+  txtmaq17:
+        dataRef: "TTPR6774PSE4_txt"
+        label:
+          separator: "replace"
+  reservado17:
+    dataRef: "TTPR6774PSE4"
+    fillColor:
+      thresholds: *thresholds-on-off
+    link: *Esteira_Reservados
+
+  txtmaq18:
+        dataRef: "TTPR6775PSE4_txt"
+        label:
+          separator: "replace"
+  reservado18:
+    dataRef: "TTPR6775PSE4"
+    fillColor:
+      thresholds: *thresholds-on-off
+    link: *Esteira_Reservados
+
+  txtmaq19:
+        dataRef: "TTPR6776PSE4_txt"
         label:
           separator: "replace"  
   reservado19:
-    dataRef: "TTPR6778PSE4"
+    dataRef: "TTPR6776PSE4"
     fillColor:
       thresholds: *thresholds-on-off
     link: *Esteira_Reservados
   
   txtmaq20:
-        dataRef: "TTPR6779PSE4_txt"
+        dataRef: "TTPR6767PSE4_txt"
         label:
           separator: "replace"
   reservado20:
-    dataRef: "TTPR6779PSE4"
+    dataRef: "TTPR6767PSE4"
     fillColor:
       thresholds: *thresholds-on-off
     link: *Esteira_Reservados
