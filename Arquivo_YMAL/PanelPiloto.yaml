@@ -4,6 +4,8 @@
 anchorLinks:
   - link: &Esteira_Reservados
       url: "https://grafana.gb.tech/d/dea9rtoh6h8n4d/qa-e-hml-7c-esteiras-4-e-5?orgId=1&from=now-7d&to=now&timezone=America%2FSao_Paulo"
+  - link: &Rede_Meraki1
+      url: "https://grafana.gb.tech/d/caaf4f59-e214-4fe7-8cf7-3af470c2a692/qa-e-hml-7c-meraki-utbot03?orgId=1&from=now-6h&to=now&timezone=America%2FSao_Paulo"
   - thresholds: &thresholds-on-off
       - {color: "red", level: 0}
       - {color: "green", level: 1}
@@ -213,3 +215,8 @@ cells:
 
 #--- Configuração rede ---
 
+  meraki1:
+    dataRef: "meraki1"
+    fillColor:
+      thresholds: *thresholds-on-off
+    link: *Rede_Meraki1
