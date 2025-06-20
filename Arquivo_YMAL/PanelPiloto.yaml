@@ -222,7 +222,7 @@ cells:
     link: *Rede_Meraki1
 
   txtlink1:
-    dataRef: "link_txt"
+    dataRef: "link1_txt"
     fillColor:
       thresholds:
         - {color: "green", level: "active"}
