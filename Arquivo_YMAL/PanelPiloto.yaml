@@ -222,11 +222,10 @@ cells:
     link: *Rede_Meraki1
 
   link1:
-    dataRef: "link1"
-    fillColor:
-      thresholds:
-        - {color: "green", level: "active"}
-        - {color: "write", level: "ready"}
-        - {color: "red", level: "failed"}
-        - {color: "red", level: "not connected"}
-    link: *Rede_Meraki1
+    dataRef: "link1" 
+    labelColor: 
+      textMatchingColor:
+        - {color: "green", match: "active"}
+        - {color: "red", match: "inactive"}
+        - {color: "blue", match: "warning"} 
+
