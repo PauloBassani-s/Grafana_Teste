@@ -221,8 +221,8 @@ cells:
       thresholds: *thresholds-on-off
     link: *Rede_Meraki1
 
-  txtlink1:
-    dataRef: "link1_txt"
+  link1:
+    dataRef: "link1"
     fillColor:
       thresholds:
         - {color: "green", level: "active"}
