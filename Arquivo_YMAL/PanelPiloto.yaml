@@ -220,3 +220,12 @@ cells:
     fillColor:
       thresholds: *thresholds-on-off
     link: *Rede_Meraki1
+
+  txtlink1:
+    dataRef: "link_txt"
+    fillColor:
+      thresholds:
+        - {color: "green", level: "active"}
+        - {color: "write", level: "ready"}
+        - {color: "red", level: "failed"}
+        - {color: "red", level: "not connected"}
