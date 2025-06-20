@@ -229,3 +229,4 @@ cells:
         - {color: "write", level: "ready"}
         - {color: "red", level: "failed"}
         - {color: "red", level: "not connected"}
+    link: *Rede_Meraki1
