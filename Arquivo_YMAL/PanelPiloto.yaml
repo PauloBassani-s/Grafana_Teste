@@ -223,6 +223,7 @@ cells:
 
   link1:
     dataRef: "link1" 
-    textMatchingColor:
-      - {color: "green", match: "active"}
+    labelColor:
+      thresholdPatterns:
+        - {color: "green", pattern: '^active$'}
     link: *Rede_Meraki1
