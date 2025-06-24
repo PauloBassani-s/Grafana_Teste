@@ -223,9 +223,7 @@ cells:
 
   link1:
     dataRef: "link1" 
-    data-label: 
+    fillColor: 
       textMatchingColor:
         - {color: "green", match: "active"}
-        - {color: "red", match: "inactive"}
-        - {color: "blue", match: "warning"} 
 
