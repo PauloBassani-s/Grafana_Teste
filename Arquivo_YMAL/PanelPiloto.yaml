@@ -223,7 +223,6 @@ cells:
 
   link1:
     dataRef: "link1" 
-    fillColor: 
-      textMatchingColor:
-        - {color: "green", match: "active"}
-
+    textMatchingColor:
+      - {color: "green", match: "active"}
+    link: *Rede_Meraki1
