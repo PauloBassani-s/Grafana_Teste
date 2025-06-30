@@ -19,6 +19,9 @@ anchorLinks:
       - {color: "red", pattern: '^inactive$'}
       - {color: "red", pattern: '^not connected$'}
       - {color: "gray", pattern: '^ready$'}
+  - thresholds: &thresholds-latencia
+      - {color: "red", level: 0}
+      - {color: "green", level: 1}
 
 #--- Configuração do painel ---
 cellIdPreamble: "cell-"
@@ -243,3 +246,10 @@ cells:
       thresholdPatterns: *thresholdPatterns-active-inactive
     link: *Rede_Meraki1
 
+  latencia1:
+    dataRef: "latencia1"
+    label:
+        separator: "replace"
+    labelColor:
+      thresholds: *thresholds-latencia   
+    link: *Rede_Meraki1
