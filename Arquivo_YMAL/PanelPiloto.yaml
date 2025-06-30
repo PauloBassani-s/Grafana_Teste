@@ -1,14 +1,24 @@
 ---
 
 #código funcional
+
+#--- Links para reutilizar código ---
+  # Links para os dashboards de esteiras e rede Meraki
 anchorLinks:
   - link: &Esteira_Reservados
       url: "https://grafana.gb.tech/d/dea9rtoh6h8n4d/qa-e-hml-7c-esteiras-4-e-5?orgId=1&from=now-7d&to=now&timezone=America%2FSao_Paulo"
   - link: &Rede_Meraki1
       url: "https://grafana.gb.tech/d/caaf4f59-e214-4fe7-8cf7-3af470c2a692/qa-e-hml-7c-meraki-utbot03?orgId=1&from=now-6h&to=now&timezone=America%2FSao_Paulo"
+  
+  # Definição de cores e padrões de thresholds
   - thresholds: &thresholds-on-off
       - {color: "red", level: 0}
       - {color: "green", level: 1}
+  - thresholdPatterns: &thresholdPatterns-active-inactive
+      - {color: "green", pattern: '^active$'}
+      - {color: "red", pattern: '^inactive$'}
+      - {color: "red", pattern: '^not connected$'}
+      - {color: "gray", pattern: '^ready$'}
 
 #--- Configuração do painel ---
 cellIdPreamble: "cell-"
@@ -224,6 +234,12 @@ cells:
   link1:
     dataRef: "link1" 
     labelColor:
-      thresholdPatterns:
-        - {color: "green", pattern: '^active$'}
+      thresholdPatterns: *thresholdPatterns-active-inactive
     link: *Rede_Meraki1
+
+  link2:
+    dataRef: "link2"
+    labelColor:
+      thresholdPatterns: *thresholdPatterns-active-inactive
+    link: *Rede_Meraki1
+
