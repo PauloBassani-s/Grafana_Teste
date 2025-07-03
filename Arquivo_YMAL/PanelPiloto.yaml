@@ -5,6 +5,8 @@
 #--- Links para reutilizar código ---
   # Links para os dashboards de esteiras e rede Meraki
 anchorLinks:
+  - link: &g_sites_label
+      url: "https://sites.google.com/grupoboticario.com.br/infra-varejo-qa/p%C3%A1gina-inicial"
   - link: &Esteira_Reservados
       url: "https://grafana.gb.tech/d/dea9rtoh6h8n4d/qa-e-hml-7c-esteiras-4-e-5?orgId=1&from=now-7d&to=now&timezone=America%2FSao_Paulo"
   - link: &Rede_Meraki1
@@ -14,15 +16,20 @@ anchorLinks:
   - thresholds: &thresholds-on-off
       - {color: "red", level: 0}
       - {color: "green", level: 1}
+  - thresholds: &thresholds-latencia
+      - {color: "green", level: 1}
+      - {color: "yellow", level: 50}
+      - {color: "red", level: 100}
   - thresholdPatterns: &thresholdPatterns-active-inactive
       - {color: "green", pattern: '^active$'}
       - {color: "red", pattern: '^inactive$'}
       - {color: "red", pattern: '^not connected$'}
       - {color: "gray", pattern: '^ready$'}
-  - thresholds: &thresholds-latencia
-      - {color: "red", level: 0}
-      - {color: "green", level: 1}
-
+  - thresholdPatterns: &thresholdPatterns-latencia
+      - {color: "red", pattern: '^(5[1-9]|[6-9][0-9]|[1-9][0-9]{2,})%?$'}
+      - {color: "orange", pattern: '^(2[5-9]|[3-4][0-9]|50)%?$'}
+      - {color: "green", pattern: '^(0|[1-9]|1[0-9]|2[0-4])%?$'}
+    
 #--- Configuração do painel ---
 cellIdPreamble: "cell-"
 cells: 
@@ -246,10 +253,7 @@ cells:
       thresholdPatterns: *thresholdPatterns-active-inactive
     link: *Rede_Meraki1
 
-  latencia1:
-    dataRef: "latencia1"
-    label:
-        separator: "replace"
-    labelColor:
-      thresholds: *thresholds-latencia   
-    link: *Rede_Meraki1
+#--- link ícone do lab ---
+
+  lab:
+    link: *g_sites_label
