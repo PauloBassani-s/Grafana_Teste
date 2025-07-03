@@ -16,19 +16,11 @@ anchorLinks:
   - thresholds: &thresholds-on-off
       - {color: "red", level: 0}
       - {color: "green", level: 1}
-  - thresholds: &thresholds-latencia
-      - {color: "green", level: 1}
-      - {color: "yellow", level: 50}
-      - {color: "red", level: 100}
   - thresholdPatterns: &thresholdPatterns-active-inactive
       - {color: "green", pattern: '^active$'}
       - {color: "red", pattern: '^inactive$'}
       - {color: "red", pattern: '^not connected$'}
       - {color: "gray", pattern: '^ready$'}
-  - thresholdPatterns: &thresholdPatterns-latencia
-      - {color: "red", pattern: '^(5[1-9]|[6-9][0-9]|[1-9][0-9]{2,})%?$'}
-      - {color: "orange", pattern: '^(2[5-9]|[3-4][0-9]|50)%?$'}
-      - {color: "green", pattern: '^(0|[1-9]|1[0-9]|2[0-4])%?$'}
     
 #--- Configuração do painel ---
 cellIdPreamble: "cell-"
