@@ -34,6 +34,8 @@ cells:
     fillColor:
       thresholds: *thresholds-on-off
     link: *Esteira_Reservados
+  ttpr1:
+    link: *Esteira_Reservados
 
   txtmaq2:
         dataRef: "TTPR6761PSE4_txt"
@@ -43,6 +45,8 @@ cells:
     dataRef: "TTPR6761PSE4"
     fillColor:
       thresholds: *thresholds-on-off
+    link: *Esteira_Reservados
+  ttpr2:
     link: *Esteira_Reservados
 
   txtmaq3:
@@ -54,6 +58,8 @@ cells:
     fillColor:
       thresholds: *thresholds-on-off
     link: *Esteira_Reservados
+  ttpr3:
+    link: *Esteira_Reservados
 
   txtmaq4:
         dataRef: "TTPR6763PSE4_txt"
@@ -63,6 +69,8 @@ cells:
     dataRef: "TTPR6763PSE4"
     fillColor:
       thresholds: *thresholds-on-off
+    link: *Esteira_Reservados
+  ttpr4:
     link: *Esteira_Reservados
 
   txtmaq5:
@@ -74,6 +82,8 @@ cells:
     fillColor:
       thresholds: *thresholds-on-off
     link: *Esteira_Reservados
+  ttpr5:
+    link: *Esteira_Reservados
 
   txtmaq6:
         dataRef: "TTPR6765PSE4_txt"
@@ -83,6 +93,8 @@ cells:
     dataRef: "TTPR6765PSE4"
     fillColor:
       thresholds: *thresholds-on-off
+    link: *Esteira_Reservados
+  ttpr6:
     link: *Esteira_Reservados
 
   txtmaq7:
@@ -94,6 +106,8 @@ cells:
     fillColor:
       thresholds: *thresholds-on-off
     link: *Esteira_Reservados
+  ttpr7:
+    link: *Esteira_Reservados
 
   txtmaq8:
         dataRef: "TTPR6767PSE4_txt"
@@ -103,6 +117,8 @@ cells:
     dataRef: "TTPR6767PSE4"
     fillColor:
       thresholds: *thresholds-on-off
+    link: *Esteira_Reservados
+  ttpr8:
     link: *Esteira_Reservados
 
   txtmaq9:
@@ -114,6 +130,8 @@ cells:
     fillColor:
       thresholds: *thresholds-on-off
     link: *Esteira_Reservados
+  ttpr9:
+    link: *Esteira_Reservados
 
   txtmaq10:
         dataRef: "TTPR6778PSE4_txt"
@@ -123,6 +141,8 @@ cells:
     dataRef: "TTPR6778PSE4"
     fillColor:
       thresholds: *thresholds-on-off
+    link: *Esteira_Reservados
+  ttpr10:
     link: *Esteira_Reservados
 
   txtmaq11:
@@ -134,7 +154,9 @@ cells:
     fillColor:
       thresholds: *thresholds-on-off
     link: *Esteira_Reservados 
-  
+  ttpr11: 
+    link: *Esteira_Reservados
+
   txtmaq12:
         dataRef: "TTPR6769PSE4_txt"
         label:
@@ -144,7 +166,9 @@ cells:
     fillColor:
       thresholds: *thresholds-on-off
     link: *Esteira_Reservados
-  
+  ttpr12:
+    link: *Esteira_Reservados  
+
   txtmaq13:
         dataRef: "TTPR6770PSE4_txt"
         label:
@@ -154,7 +178,9 @@ cells:
     fillColor:
       thresholds: *thresholds-on-off
     link: *Esteira_Reservados
-  
+  ttpr13:
+    link: *Esteira_Reservados
+
   txtmaq14:
         dataRef: "TTPR6771PSE4_txt"
         label:
@@ -163,6 +189,8 @@ cells:
     dataRef: "TTPR6771PSE4"
     fillColor:
       thresholds: *thresholds-on-off
+    link: *Esteira_Reservados
+  ttpr14:
     link: *Esteira_Reservados
 
   txtmaq15:
@@ -174,6 +202,8 @@ cells:
     fillColor:
       thresholds: *thresholds-on-off
     link: *Esteira_Reservados
+  ttpr15: 
+    link: *Esteira_Reservados
 
   txtmaq16:
         dataRef: "TTPR6773PSE4_txt"
@@ -183,6 +213,8 @@ cells:
     dataRef: "TTPR6773PSE4"
     fillColor:
       thresholds: *thresholds-on-off
+    link: *Esteira_Reservados
+  ttpr16:
     link: *Esteira_Reservados
 
   txtmaq17:
@@ -194,6 +226,8 @@ cells:
     fillColor:
       thresholds: *thresholds-on-off
     link: *Esteira_Reservados
+  ttpr17: 
+    link: *Esteira_Reservados
 
   txtmaq18:
         dataRef: "TTPR6775PSE4_txt"
@@ -203,6 +237,8 @@ cells:
     dataRef: "TTPR6775PSE4"
     fillColor:
       thresholds: *thresholds-on-off
+    link: *Esteira_Reservados
+  ttpr18: 
     link: *Esteira_Reservados
 
   txtmaq19:
@@ -214,7 +250,9 @@ cells:
     fillColor:
       thresholds: *thresholds-on-off
     link: *Esteira_Reservados
-  
+  ttpr19:
+    link: *Esteira_Reservados
+
   txtmaq20:
         dataRef: "TTPR6767PSE4_txt"
         label:
@@ -223,6 +261,8 @@ cells:
     dataRef: "TTPR6767PSE4"
     fillColor:
       thresholds: *thresholds-on-off
+    link: *Esteira_Reservados
+  ttpr20:
     link: *Esteira_Reservados
 
 #--- Configuração rede ---
