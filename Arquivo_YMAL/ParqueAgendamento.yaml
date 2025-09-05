@@ -1,0 +1,118 @@
+---
+
+#código funcional
+
+#--- Links para reutilizar código ---
+  # Links para os dashboards de esteiras e rede Meraki
+anchorLinks:
+  - link: &Esteira_Agendamento
+      url: "https://grafana.gb.tech/d/dea9rtoh6h8n6d/qa-e-hml-7c-esteira-6?orgId=1&from=now-7d&to=now&timezone=America%2FSao_Paulo"
+  
+  # Definição de cores e padrões de thresholds
+  - thresholds: &thresholds-on-off
+      - {color: "red", level: 0}
+      - {color: "green", level: 1}
+  - thresholdPatterns: &thresholdPatterns-active-inactive
+      - {color: "green", pattern: '^active$'}
+      - {color: "red", pattern: '^inactive$'}
+      - {color: "red", pattern: '^not connected$'}
+      - {color: "gray", pattern: '^ready$'}
+    
+#--- Configuração do painel ---
+cellIdPreamble: "cell-"
+cells: 
+  txtmaq1:
+      dataRef: "TTPR6725PSE6_txt"
+      label:
+        separator: "replace"
+  reservado1:
+    dataRef: "TTPR6725PSE6"
+    fillColor:
+      thresholds: *thresholds-on-off
+    link: *Esteira_Agendamento
+  ttpr1:
+    link: *Esteira_Agendamento
+
+  txtmaq2:
+        dataRef: "TTPR6746PSE6_txt"
+        label:
+          separator: "replace"
+  reservado2:
+    dataRef: "TTPR6746PSE6"
+    fillColor:
+      thresholds: *thresholds-on-off
+    link: *Esteira_Agendamento
+  ttpr2:
+    link: *Esteira_Agendamento
+
+  txtmaq3:
+        dataRef: "TTPR6747PSE6_txt"
+        label:
+          separator: "replace"
+  reservado3:
+    dataRef: "TTPR6747PSE6"
+    fillColor:
+      thresholds: *thresholds-on-off
+    link: *Esteira_Agendamento
+  ttpr3:
+    link: *Esteira_Agendamento
+
+  txtmaq4:
+        dataRef: "TTPR6749PSE6_txt"
+        label:
+          separator: "replace"
+  reservado4:
+    dataRef: "TTPR6749PSE6"
+    fillColor:
+      thresholds: *thresholds-on-off
+    link: *Esteira_Agendamento
+  ttpr4:
+    link: *Esteira_Agendamento
+
+  txtmaq5:
+        dataRef: "TTPR6755PSE6_txt"
+        label:
+          separator: "replace"
+  reservado5:
+    dataRef: "TTPR6755PSE6"
+    fillColor:
+      thresholds: *thresholds-on-off
+    link: *Esteira_Agendamento
+  ttpr5:
+    link: *Esteira_Agendamento
+
+  txtmaq6:
+        dataRef: "TTPR6756PSE6_txt"
+        label:
+          separator: "replace"
+  reservado6:
+    dataRef: "TTPR6756PSE6"
+    fillColor:
+      thresholds: *thresholds-on-off
+    link: *Esteira_Agendamento
+  ttpr6:
+    link: *Esteira_Agendamento
+
+  txtmaq7:
+        dataRef: "TTPR6758PSE6_txt"
+        label:
+          separator: "replace"
+  reservado7:
+    dataRef: "TTPR6758PSE6"
+    fillColor:
+      thresholds: *thresholds-on-off
+    link: *Esteira_Agendamento
+  ttpr7:
+    link: *Esteira_Agendamento
+
+  txtmaq8:
+        dataRef: "TTPR6786PSE6_txt"
+        label:
+          separator: "replace"
+  reservado8:
+    dataRef: "TTPR6786PSE6"
+    fillColor:
+      thresholds: *thresholds-on-off
+    link: *Esteira_Agendamento
+  ttpr8:
+    link: *Esteira_Agendamento
