@@ -1,0 +1,58 @@
+---
+
+#código funcional
+
+#--- Links para reutilizar código ---
+  # Links para os dashboards de esteiras e rede Meraki
+anchorLinks:
+  - link: &Esteira_Agendamento
+      url: ""
+  
+  # Definição de cores e padrões de thresholds
+  - thresholds: &thresholds-on-off
+      - {color: "red", level: 0}
+      - {color: "green", level: 1}
+  - thresholdPatterns: &thresholdPatterns-active-inactive
+      - {color: "green", pattern: '^active$'}
+      - {color: "red", pattern: '^inactive$'}
+      - {color: "red", pattern: '^not connected$'}
+      - {color: "gray", pattern: '^ready$'}
+    
+#--- Configuração do painel ---
+cellIdPreamble: "cell-"
+cells: 
+  txtmaq1:
+      dataRef: "TTPR6780PSE5_txt"
+      label:
+        separator: "replace"
+  reservado1:
+    dataRef: "TTPR6780PSE5"
+    fillColor:
+      thresholds: *thresholds-on-off
+    #link: *Esteira_Agendamento
+  #ttpr1:
+    #link: *Esteira_Agendamento
+
+  txtmaq2:
+        dataRef: "TTPR6781PSE5_txt"
+        label:
+          separator: "replace"
+  reservado2:
+    dataRef: "TTPR6781PSE5"
+    fillColor:
+      thresholds: *thresholds-on-off
+    #link: *Esteira_Agendamento
+  #ttpr2:
+    #link: *Esteira_Agendamento
+
+  txtmaq3:
+        dataRef: "TTPR6782PSE5_txt"
+        label:
+          separator: "replace"
+  reservado3:
+    dataRef: "TTPR6782PSE5"
+    fillColor:
+      thresholds: *thresholds-on-off
+    #link: *Esteira_Agendamento
+  #ttpr3:
+    #link: *Esteira_Agendamento
